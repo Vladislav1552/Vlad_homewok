@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hm4</title>
+    <link rel="stylesheet"  href="css/Hw4.css" type="text/css">
+</head>
+<body>
+  <div>
+        <form method="post" >
+               
+            <p class="word">Event name</p>
+         
+            <p>Mel's birthday celebration </p>
+            <hr>
+        </hr>
+           <table border="0"width="100%">
+            <tr><td> <p class="word">from</p></td></tr>
+            <tr><td> <input type="date"  id="val" min="2017-11-26" max="2017-11-26">  </td>  <td> 
+             <input type="time" required min="17:00" max="5:00">
+             <span></span>
+             </td>
+         </tr>
+            <tr><td> <p class="word">to</p></td></tr>
+            <tr><td><input type="date" min="2017-11-27" max="2017-11-28" >
+            </td> <td>
+                 <input type="time" required min="6:00" max="23:00">   
+                 <span></span> 
+             </td>
+        </tr>
+        </table>
+        <p class="word">Event name</p>
+        <p>Come help celebrate Mel's birthday witch dinner,drinks and putt-putt.</p>
+       <p id="button"> <a href="done.html" title ="Жми не бойся" target="myFrame"><img src ="images/button.png"  width="100px" height="100px"></a><p>
+        </form>
+ </div>
+ <div id="frame">
+ <iframe src="output.html" frameborder="0" name="myFrame"></iframe>
+ </div>
+</body>
+</html>
