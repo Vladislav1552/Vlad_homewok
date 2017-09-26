@@ -1,6 +1,6 @@
 #First-slide{
     margin-left:-7px;
-    margin-top:-7px;
+    margin-top:-8px;
     height: 288px;
     width:1365px;
     background-image:url(../images/d.png);
@@ -44,7 +44,7 @@ span{
 }
 #five-slide{
     position:relative;
-    margin-top:12px;
+    margin-top:16px;
     height: 165px;
     width: 1352px;
     box-shadow: 1px 1px 5px 1px #333; 
