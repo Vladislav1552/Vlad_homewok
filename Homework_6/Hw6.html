@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hm4</title>
+    <link rel="stylesheet"  href="css/Hw6.css" type="text/css">
+</head>
+<body>
+  <div class="form" >
+    <form method="post" >
+       <p class="form__word">Event name</p>
+       <p class="form__text--large">Mel's birthday celebration </p>
+       <hr></hr>
+       <p class="form__word">from</p>
+            <div class="date-time">
+                <input type="date" class="date-time__validation"  id="val" min="2017-11-26" max="2017-11-26">  
+                <input type="time" class="date-time__validation" required min="17:00" max="5:00">
+                <span></span>
+            </div>
+       <p class="form__word">to</p>
+            <div class="date-time">
+                 <input type="date" class="date-time__validation" min="2017-11-27" max="2017-11-28" >
+                 <input type="time" class="date-time__validation" required min="6:00" max="23:00">   
+                 <span></span> 
+            </div>
+       <p class="form__word">Event name</p>
+       <p class="form__text--large">Come help celebrate Mel's birthday witch dinner,drinks and putt-putt.</p>
+       <p class="form__button"> <a href="done.html" title ="Жми не бойся" target="myFrame"><img src ="images/button.png"  width="100px" height="100px"></a><p>
+    </form>
+  </div >
+ <div class="form">
+ <iframe src="output.html" frameborder="0" name="myFrame"></iframe>
+ </div>
+</body>
+</html>
