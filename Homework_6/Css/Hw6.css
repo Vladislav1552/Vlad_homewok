@@ -1,4 +1,4 @@
-.form__word{
+.form__text{
     font:12px Monotype Corsiva;
     color:gray;
     margin:1px;
@@ -7,11 +7,14 @@
     margin:1px;
     font:16px Monotype Corsiva;
 }
-.form{
+.wrapper{
+    margin:50px 450px;
     width:400px;
     height:350 px;
-    margin:50px 450px;
-    background-color: #E9E5E5;
+}
+
+.form, .frame{
+    background-color: #E9E8E5;
 }
 .form__button{
     text-indent:280px;
