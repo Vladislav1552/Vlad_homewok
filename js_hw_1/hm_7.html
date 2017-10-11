@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw_7</title>
+    <script src='js/hw_7.js' type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .hw7__button-js{
+            display: flex;
+            flex-direction: row;
+           justify-content: space-around;
+        }
+   
+        .hw7__poz{
+           margin-top:150px;
+        }
+        @media (max-width: 420px){ 
+       .hw7__button-js{
+           flex-direction: column;
+       }
+    }
+    </style>
+            <div class='hw7'>
+                    <div class="hw7__button-js">
+                    <button onclick="alert(a +'-binary + if at least one argument is a string, then the second will also be converted to a string!')"class='hw7__poz btn btn-primary'>'1'+1+0</button>
+                    <button onclick="alert(b +'-This is cast to string – a feature exclusively of a binary operator +,the other arithmetic operators work only with numbers and always cause arguments..');"class='hw7__poz btn btn-primary'>'1'-1+2</button>
+                    <button onclick="alert(c +'-Because true equals one and false = = 0, then their sum is 1+0 gives 1.');"class='hw7__poz btn btn-primary'>true+false</button>
+                    <button onclick="alert(d + '-Other arithmetic operators work only with numbers and always lead to arguments.');"class='hw7__poz btn btn-primary'>10/'5'</button>
+                    <button onclick="alert(f + '-Other arithmetic operators work only with numbers and always lead to arguments. Multiplication is arifmeticheskoe operation only');"class='hw7__poz btn btn-primary'>'2'*'3'</button>
+                    <button onclick="alert(g + '- The same as in example 2 Is cast to string – a feature exclusively of a binary operator +,the other arithmetic operators work only with numbers and always cause arguments among');"class='hw7__poz btn btn-primary'>4+5+'px'</button>
+                    <button onclick="alert(e + '-binary + if at least one argument is a string, then the second will also be converted to a string!');"class='hw7__poz btn btn-primary'>'$'+4+5</button>
+                    </div>
+                    <div class="hw7__button-js">
+                    <button onclick="alert(f + 'This is cast to string-this function is only binary operator is +,the other arithmetic operators work only with numbers and always cause arguments.');"class='hw7__poz btn btn-primary'>'42'-2</button>
+                    <button onclick="alert(h + '-you cannot perform arithmetic operations if a is string, specifies the number and the word this command');"class='hw7__poz btn btn-primary'>'4px'-2</button>
+                    <button onclick="alert(i + '-when you divide by 0 we get infinity');"class='hw7__poz btn btn-primary'>7/0</button>
+                    <button onclick="alert(j + '-because we use binary plus, the browser takes it as a string of enterprises, \ indicates a space');"class='hw7__poz btn btn-primary'>-9\n+5</button>
+                    <button onclick="alert(k +'-since we are using binary plus, the browser treats it as a string of enterprises, \ indicates a space.According to the rules of the 2nd example');"class='hw7__poz btn btn-primary'>'-9\n'-5</button>
+                    <button onclick="alert(l + '-we can say that && stumbles on a lie, and 2 is false');" class='hw7__poz btn btn-primary'>5&&2</button>
+                    <button onclick="alert(m + '-we can say that && stumbles on a lie, and 5 is false');"class='hw7__poz btn btn-primary'>2&&5</button>
+                    </div>
+                    <div class="hw7__button-js">
+                    <button onclick="alert(n + '-skip false and return true');"class='hw7__poz btn btn-primary'>5||0</button>
+                    <button onclick="alert(o + '-skip false and return true');"class='hw7__poz btn btn-primary'>0||5</button>
+                    <button onclick="alert(p + '-null equal to 0 the same as 0+1');"class='hw7__poz btn btn-primary'>null+1</button>
+                    <button onclick="alert(q + '-undefined with numerical conversion becomes NaN');"class='hw7__poz btn btn-primary'>undefined+1</button>
+                    <button onclick="alert(r +'-When comparing == with null conversion does not occur, there is a hard rule: null == undefined and only.');"class='hw7__poz btn btn-primary'>null=='\n0\n'</button>
+                    <button onclick="alert(s+ '-there is a rule that NULL can be likened only to the undefined ,NULL == undefined');"class='hw7__poz btn btn-primary'>+null==+'\n0\n'</button>
+                </div>
+                </div>
+
+</body>
+</html>
