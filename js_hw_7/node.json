@@ -2,18 +2,17 @@
 {
   "name": "homework7",
   "version": "1.0.0",
-  "description": "server",
-  "main": "httpRequestPromise.js",
+  "description": "nodeeee",
+  "main": "XMLHttpRequest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node httpRequestPromise.js",
-    "build": "npm start"
+    "start": "XMLHttpRequest.js"
   },
-  "author": "Dima",
+  "author": "Vlad",
   "license": "ISC",
   "dependencies": {
-    "node-static": "^0.7.10",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {}
 }
+
