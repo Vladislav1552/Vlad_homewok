@@ -1,0 +1,272 @@
+.app {
+   
+    color: #998A8A;   
+    font-size: 25px; 
+}
+body{
+    margin: 0px;
+    padding: 0px;
+   background-color: hsl(45, 9%, 17%); 
+}
+.Convector__form-control {
+  box-sizing: border-box;
+  height: 40px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+  padding: 5px 20px;
+  border: 1px solid #d4d4d4;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  clear: both;
+  background: #fafafa;
+  width: 50%;
+  display: block;
+ margin-bottom: 25px;
+}
+.button__sun{
+
+  animation: 15s infinite linear;
+  animation-name: move, sun-color;
+  border-radius: 50%;
+  width: 150px;
+}
+.button {
+
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    padding-top: 9px;
+    color: #a675b3;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    margin: 20px auto;
+    font: normal 17px arial;
+  }
+  
+  .button:not(.active) {
+    box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+    background-image: linear-gradient(#3b2751, #271739);
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+  }
+  
+  .button:not(.active):hover,
+  .button:not(.active):focus {
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+  }
+  .button:not(:hover) {
+      transition: 0.6s;
+  }
+  .App__name_span1{
+    
+    display: block;
+      height: 70px;
+      width: 50px;
+  }
+  .App__value_span2{
+    display: block;
+    height: 70px;
+    width: 50px;
+}
+.App__value{
+  
+    display: block;
+    margin-left: 100px;
+
+}
+.App__value2{
+position: absolute;
+margin-left: 250px;
+margin-top: 12px;
+
+}
+.App__value3{
+  width: 250px;
+  height: 50px;
+  text-decoration: none;
+  padding-top: 9px;
+  color: #a675b3;
+  text-align: center;
+  line-height: 20px;
+margin-left: 400px;
+  margin: 20px auto;
+  font: normal 17px arial;
+}
+.App__name{
+    position: absolute;
+    display: block;
+}
+
+.App__wrapper{
+    position: relative  ;
+    width: 300px;
+    max-height: 550px;
+    margin:50px;
+  
+}
+.search{
+  margin: 25px;
+}
+.vv-search__text {
+    height: 25px;
+    color: white;
+    background-color: rgb(74, 74, 228);
+    border-radius: 25px 0 0 25px;
+    }
+    .vv-search__button {
+      height: 32px;
+        color: white;
+        background-color: rgb(228, 192, 74);
+        border: 2px solid white;
+        border-radius: 0 25px 25px 0;
+    }
+    table {border: 1px solid #69c;}
+    th {
+      font-weight: normal;
+      color: #039;
+      padding: 10px;
+    }
+    td {
+      color: #669;
+      border-top: 1px dashed #fff;
+      padding: 10px;
+      background:#ccddff;
+    }
+    tr:hover td {background: #99bcff;}
+    .tablee{
+        position: absolute;
+padding-left: 550px;
+padding-top: 180px;
+
+    }
+
+    .App__name_span1:not(.active):hover,
+    .App__name_span1:not(.active):focus {
+      transition: color 200ms linear, text-shadow 500ms linear;
+      color: #fff;
+      text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+    }
+    .App__name_span1:not(:hover) {
+        transition: 0.6s;
+    }
+    .Convector{
+        width: 300px;
+        height: 300px;
+        outline:1px solid #cc0000;
+
+background-color: #CCCCCC;
+    }
+    
+    .App__stage {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        background: steelblue;
+        box-shadow: 0 -400px 300px -300px orangered inset;
+        animation: sky 15s infinite linear;
+        }
+      .App__sun {
+       
+        position: absolute;
+        left: 0;
+        bottom: -30%;
+        width: 10em;
+        height: 10em;
+        margin-left: -2.5em;
+        margin-top: 0;
+        background: orangered;
+        border-radius: 50%;
+        box-shadow: 0 0 20px orange;
+        animation: 15s infinite linear;
+        animation-name: move, sun-color;
+        }
+      .App__grass {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(http://img-fotki.yandex.ru/get/5000/5091629.98/0_7a92d_7ece70d7_XL.png) no-repeat center bottom;
+        
+      }
+      
+      @keyframes sky {
+        0% {
+          background: darkslateblue;
+          }
+        50% {
+          background: skyblue;
+          box-shadow: 0 -400px 300px -300px steelblue inset;
+          }
+        85% {
+         background: darkslateblue;
+         box-shadow: 0 -400px 300px -300px orangered inset;
+         }
+        100% {
+          background: darkslateblue;
+          }
+      }
+      
+      @keyframes move {
+        0% {
+          }
+        10% {
+          margin-left: -4.5em;
+          }
+        20% {
+          margin-left: -5.5em;
+          }
+        30% {
+          margin-left: -6em;
+          }
+        40% {
+          margin-left: -4.5em;
+          }
+        50% {
+          left: 50%;
+          bottom: 75%;
+          width: 5em;
+          height: 5em;
+          margin-left: -2.5em;
+          }
+        60% {
+           margin-left: 1.5em;
+          }
+        70% {
+          margin-left: 3.5em;
+          }
+        80% {
+          margin-left: 2.5em;
+          }
+        90% {
+          margin-left: 1em;
+          }
+        100% {
+          left: 98%;
+          margin-left: -2.5em;
+          }
+      }
+      
+      
+      @keyframes sun-color {
+        20% {
+            background: orange;
+          }
+        40% {
+            background: gold;
+            box-shadow: 0 0 35px gold;
+          }
+        60% {
+            background: yellow;
+            box-shadow: 0 0 35px yellow;
+          }
+        80% {
+          background: orange;
+          } 
+        
+      }
+      
