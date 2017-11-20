@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "/public";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 43);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 46:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78,12 +78,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (url) {
   return new Promise(function (success, fail) {
     var request = new XMLHttpRequest();
-    request.open('GET', 'http://www.nbrb.by/API/ExRates/Rates/145', true);
-
+    request.open('GET', 'http://www.nbrb.by/API/ExRates/Rates?onDate=2016-7-1&Periodicity=1', true);
     request.addEventListener('load', function () {
       request.status >= 200 && request.status < 400 ? success(request.responseText) : fail(new Error('Request Failed: ' + request.statusText));
     });
-
     request.addEventListener('error', function () {
       fail(new Error('Network Error'));
     });

@@ -1,5 +1,5 @@
 .app {
-   
+
     color: #998A8A;   
     font-size: 25px; 
 }
@@ -8,22 +8,7 @@ body{
     padding: 0px;
    background-color: hsl(45, 9%, 17%); 
 }
-.Convector__form-control {
-  box-sizing: border-box;
-  height: 40px;
-  margin-left: 50px;
-  margin-bottom: 150px;
-  padding: 5px 20px;
-  border: 1px solid #d4d4d4;
-  font-size: 16px;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  clear: both;
-  background: #fafafa;
-  width: 50%;
-  display: block;
- margin-bottom: 25px;
-}
+
 .button__sun{
 
   animation: 15s infinite linear;
@@ -32,7 +17,6 @@ body{
   width: 150px;
 }
 .button {
-
     width: 250px;
     height: 50px;
     text-decoration: none;
@@ -50,11 +34,13 @@ body{
     background-image: linear-gradient(#3b2751, #271739);
     text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
   }
-  
+  .TEST {
+    position: absolute;
+  }
   .button:not(.active):hover,
   .button:not(.active):focus {
     transition: color 200ms linear, text-shadow 500ms linear;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
   }
   .button:not(:hover) {
@@ -71,6 +57,7 @@ body{
     height: 70px;
     width: 50px;
 }
+
 .App__value{
   
     display: block;
@@ -101,47 +88,20 @@ margin-left: 400px;
 }
 
 .App__wrapper{
-    position: relative  ;
-    width: 300px;
-    max-height: 550px;
-    margin:50px;
+  position: relative  ;
+  width: 550px;
+  max-height: 550px;
+  margin:0px;
+  overflow-y:scroll;
+  height: 550px;
+}
+.App_Currencies{
+  position: relative  ;
+  width: 300px;
+  max-height: 550px;
+  margin:50px;
   
 }
-.search{
-  margin: 25px;
-}
-.vv-search__text {
-    height: 25px;
-    color: white;
-    background-color: rgb(74, 74, 228);
-    border-radius: 25px 0 0 25px;
-    }
-    .vv-search__button {
-      height: 32px;
-        color: white;
-        background-color: rgb(228, 192, 74);
-        border: 2px solid white;
-        border-radius: 0 25px 25px 0;
-    }
-    table {border: 1px solid #69c;}
-    th {
-      font-weight: normal;
-      color: #039;
-      padding: 10px;
-    }
-    td {
-      color: #669;
-      border-top: 1px dashed #fff;
-      padding: 10px;
-      background:#ccddff;
-    }
-    tr:hover td {background: #99bcff;}
-    .tablee{
-        position: absolute;
-padding-left: 550px;
-padding-top: 180px;
-
-    }
 
     .App__name_span1:not(.active):hover,
     .App__name_span1:not(.active):focus {
@@ -151,13 +111,6 @@ padding-top: 180px;
     }
     .App__name_span1:not(:hover) {
         transition: 0.6s;
-    }
-    .Convector{
-        width: 300px;
-        height: 300px;
-        outline:1px solid #cc0000;
-
-background-color: #CCCCCC;
     }
     
     .App__stage {

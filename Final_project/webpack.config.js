@@ -6,11 +6,13 @@ module.exports = {
  
     entry: {
         app: './app.js',
-        load: './load.js',
+        load: './load/load.js',
         Menu:'./Menu.js',
-        Convector:'./Convector.js',
-        Table:'./Table.js',
-        Search:'./Search.js'
+        Convector:'./Convector/Convector.js',
+        Table:'./Table/Table.js',
+        Search:'./Search/Search.js',
+        
+      
     },
     output: {
         path: path.resolve(__dirname, './build/public'), //Изменили финальную директорию билда
