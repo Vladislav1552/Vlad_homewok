@@ -1,0 +1,18 @@
+.Menu{ 
+text-decoration: none;
+display: inline-block; /* изменяем ссылки на встроенные блоки */
+color: #c0c0c0; /* цвет текста ссылок */
+
+font-weight: bold; /* жирный текст */
+text-decoration: none; /* отмена подчеркивания */
+border: 2px solid; /* толщина и стиль рамок */
+border-color: #ccc #333 #333 #ccc; /* цвет границ рамок */
+padding: 10px 15px; /* внутренние отступы */
+}
+.Menu:hover {
+color: #acacac; /* цвет ссылок под курсором мыши */
+background: #0048C5; /* фон */
+border-color: #333 #ccc #ccc #333; /* цвет границ рамок */
+position: relative; /* относительное позиционирование */
+top: -1px; /* смещение вверх на 1px */
+}
