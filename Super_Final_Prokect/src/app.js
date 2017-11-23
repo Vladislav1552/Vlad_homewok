@@ -3,8 +3,6 @@ import moment from 'moment';
 import {
   HashRouter as Router,
   Route,
-  NavLink,
-  Switch,
   hashHistory
 } from 'react-router-dom';
 import React, { Component } from 'react';
