@@ -7,7 +7,7 @@ import styles from './Convector.css';
 import load from '../load/load';
 import axios from 'axios';
 import Menu from '../Menu/Menu';
-
+import  Currencies from '../Currencies/Currencies.js';
  class ConvectorInput extends React.Component {
     constructor(props) {
       super(props);
@@ -24,10 +24,10 @@ import Menu from '../Menu/Menu';
    this.setState({value:event.target.value})
   }
     render() {
-      const Currencies = this.props.Currencies;
+      const Сurrency = this.props.Сurrency;
       const scale = this.props.scale;
       return (
-          <input  className="Convector__form-control" value={Currencies}
+          <input  className="Convector__form-control" value={Сurrency}
                  onChange={this.handleChange} />
       );
     }
@@ -45,7 +45,7 @@ class Convector  extends React.Component {
       this.firstСurrency = this.firstСurrency.bind(this);
       this.secondСurrency = this.secondСurrency.bind(this);
       this.loadData();
-      // this.state = {Currencies: '', scale: 'c', data:[]};
+      // this.state = {Сurrency: '', scale: 'c', data:[]};
     }
     loadData() {
         load(this.state.data).then(Cur_Abbreviation=> {
@@ -54,11 +54,11 @@ class Convector  extends React.Component {
                });       
             });
     }
-    firstСurrency(Currencies) {
-      this.setState({scale: 'c', Currencies});
+    firstСurrency(Сurrency) {
+      this.setState({scale: 'c', Сurrency});
     }
-     secondСurrency(Currencies) {
-      this.setState({scale: 'f', Currencies});
+     secondСurrency(Сurrency) {
+      this.setState({scale: 'f', Сurrency});
     }
     Cur_Name1st(e){
        this.setState({Cur_Name1st_value:e.target.value});
@@ -67,7 +67,6 @@ class Convector  extends React.Component {
       this.setState({Cur_Name2wo_value:ee.target.value})
      }
     render() { 
-      
       const testt = this.state.data;  
       const Cur_Name1st = this.state.Cur_Name1st_value;
       const Cur_Name2wo = this.state.Cur_Name2wo_value;
@@ -80,14 +79,14 @@ class Convector  extends React.Component {
         }, []);
       
      }
-        function toCurrencies_ferst(SecondСurrency) {
+        function toСurrency_ferst(SecondСurrency) {
           return (SecondСurrency*ConvertVal1)/ConvertVal2 ;
         }
-        function toCurrencies_second(FirstСurrency) {
+        function toСurrency_second(FirstСurrency) {
           return (FirstСurrency *ConvertVal2 )/ConvertVal1;
         }
-        function tryConvert(Currencies, convert) {
-          const input = parseFloat(Currencies);
+        function tryConvert(Сurrency, convert) {
+          const input = parseFloat(Сurrency);
           if (Number.isNaN(input)) {
             return '';
           }
@@ -96,13 +95,16 @@ class Convector  extends React.Component {
           return rounded.toString();
         }
       const scale = this.state.scale;
-      const Currencies = this.state.Currencies;
+      const Сurrency = this.state.Сurrency;
       const testtt = this.props.data;  
-      const FirstСurrency = scale === 'f' ? tryConvert(Currencies, toCurrencies_ferst) : Currencies;
-      const SecondСurrency = scale === 'c' ? tryConvert(Currencies, toCurrencies_second) : Currencies;
+      const FirstСurrency = scale === 'f' ? tryConvert(Сurrency, toСurrency_ferst) : Сurrency;
+      const SecondСurrency = scale === 'c' ? tryConvert(Сurrency, toСurrency_second) : Сurrency;
    return ( 
+  <div> 
+
+
         <div className='Convector'> 
-           
+            
            <select  className="Convector__form-control" onChange={this.Cur_Name1st}> {  /*console.log(loader)*/}
         {
           testt.map((type, index)  => (
@@ -115,7 +117,7 @@ class Convector  extends React.Component {
           </select>
           <ConvectorInput
             scale="c"
-            Currencies={FirstСurrency}
+            Сurrency={FirstСurrency}
             onValue={this.firstСurrency} />
           <select  className="Convector__form-control" onChange={this.Cur_Name2wo}>
         {testt.map((type, index) => (
@@ -128,8 +130,9 @@ class Convector  extends React.Component {
           </select>
             <ConvectorInput
             scale="f"
-            Currencies={SecondСurrency}
+            Сurrency={SecondСurrency}
             onValue={this. secondСurrency} />
+        </div>
         </div>
       );
     }

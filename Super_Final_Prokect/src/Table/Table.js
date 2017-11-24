@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 //import {Link} from 'react-router';
 import './Table.css';
+import Menu from '../Menu/Menu';
 class Table extends Component {
   render() {
     return( 
     <div className='tablee'>
+
       <table id='table'>
       <tr><td><th>Date</th></td><td><th> {this.props.Cur_Abbreviation +'..Currently'} {this.props.Cur_Name}</th></td></tr>
       <tr><td> {this.props.Date}</td><td>{this.props.Cur_OfficialRate}</td></tr>

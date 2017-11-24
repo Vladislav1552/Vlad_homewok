@@ -21,8 +21,8 @@ class Currencies extends Component {
   render() {
     return (
       <div className="App" >
-        <TEST />
-       <Menu />
+      <TEST />
+  
         <Search />
         <div className="App__wrapper">
           <div className="App_Currencies">

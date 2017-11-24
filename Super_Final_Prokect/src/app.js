@@ -17,6 +17,7 @@ import reducer from './reducers';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import configureStore from './store/configureStore.js';
+import  Main   from './Main/Main.js';
 
 
 
@@ -26,8 +27,7 @@ const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
     <Provider store={store}>
     <Router history={hashHistory}>
       <div>
-      <Route path="/" component={Currencies}/>
-      <Route path="/Convector" component={Convector}/>
+      <Route path="/" component={Main}/>
       </div>
     </Router>
   </Provider>,
