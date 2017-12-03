@@ -14,10 +14,19 @@
     display: block;
    margin-bottom: 25px;
   }
+.Convector__dinamic{
+    position: absolute;
+    margin-left: 350px;
+}
   .Convector{
+      position: absolute;
     width: 300px;
     height: 300px;
     outline:1px solid #cc0000;
+    margin-left: 650px;
 
 background-color: #CCCCCC;
+}
+.fsd{
+    width: 150px;
 }

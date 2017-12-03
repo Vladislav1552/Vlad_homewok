@@ -11,17 +11,26 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
 import  Currencies   from './Currencies/Currencies.js';
 import Convector from './Convector/Convector.js';
+import Table from './Table/Table.js';
 //import { syncHistoryWithStore } from 'react-router-redux';
 import thunk from 'redux-thunk';
-import reducer from './reducers';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import configureStore from './store/configureStore.js';
-import  Main   from './Main/Main.js';
-
-
-
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
+import  Main  from './Main/Main.js';
+import currence  from './reducers/reducers';
+import Load_Change  from './reducers/load';
+import { addTodo, loadi,givCur} from './actions/givCur'
+import reduce from './reducers/Combine'
+import load from './load/loadi';
+import configureStore from './store/configureStore'
+import Favorite from './Favorite/Favorite';
+const store = createStore(currence,Load_Change, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+ 
+store.subscribe(()=>{
+  console.log('subscribe', store.getState());
+})
+const ButtonValue = {a:'hello'}
+store. dispatch(givCur(ButtonValue))
   const place =  document.getElementById('div'); 
   ReactDOM.render(
     <Provider store={store}>

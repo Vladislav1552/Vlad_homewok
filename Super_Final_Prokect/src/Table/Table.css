@@ -1,9 +1,6 @@
-th {
-    font-weight: normal;
-    color: #039;
-    padding: 10px;
-  }
+
   td {
+    
     color: #669;
     border-top: 1px dashed #fff;
     padding: 10px;
@@ -11,8 +8,8 @@ th {
   }
   tr:hover td {background: #99bcff;}
   .tablee{
-      position: absolute;
-padding-left: 550px;
+position: absolute;
+padding-left: 650px;
 padding-top: 180px;
 
   }

@@ -1,11 +1,8 @@
-import { combineReducers } from 'redux';
-
-import tracks from './tracks';
-import playlists from './playlists';
-import filterTracks from './filterTracks';
+import { combineReducers } from 'redux'
+import  Cur_name from './ Cur_name'
+import currence from './reducers'
 
 export default combineReducers({
-  tracks,
-  playlists,
-  filterTracks
-});
+    currence,
+    Cur_name
+})
